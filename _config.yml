@@ -12,14 +12,14 @@
 
 theme                  : "minimal-mistakes-jekyll"
 remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "mint" # "default", "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : "Site Title"
+title                    : "Chayoung's Tech-Note"
 title_separator          : "-"
-name                     : "Your Name"
-description              : "An amazing website."
+name                     : "Chayoung"
+description              : "Chayoung's Tech-Note."
 url                      : "https://chayoung-choi.github.io" # the base hostname & protocol for your site e.g.
 baseurl                  : "/tech-note" # the subpath of your site, e.g. "/blog"
 repository               : "chayoung-choi/tech-note" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -106,10 +106,10 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "Chayoung.Choi"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "I am an amazing person."
-  location         : "Somewhere"
+  location         : "Seoul, Republic of Korea"
   email            :
   links:
     - label: "Email"
@@ -126,7 +126,7 @@ author:
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
+       url: "https://github.com/chayoung-choi"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
@@ -142,7 +142,7 @@ footer:
       # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url:
+       url: "https://github.com/chayoung-choi"
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
