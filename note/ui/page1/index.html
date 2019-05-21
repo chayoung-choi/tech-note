@@ -12,8 +12,8 @@
 
     <style type="text/css">
       body {margin: 0; font-family: "Lato", sans-serif; background-color: #f8f9fa;}
-      .sidebar {background-color: #064475; width: 230px;}
-      .sidebar-brand, #sidebar .sidebar-brand:hover {padding: 1rem; width: 100%; font-size: 1.175rem; font-weight: 600; color: #fff;}
+      .sidebar {background-color: #064475; min-width: 230px; max-width: 230px; z-index: 1;}
+      .sidebar-brand, .sidebar-brand:hover {padding: 1rem; width: 100%; font-size: 1.175rem; font-weight: 600; color: #fff; max-height: 60px; min-height: 60px;}
       .sidebar-content {background-color: #fff; width: 100%; height: 100%;}
       .sidebar-nav {list-style: none; padding-left: 0; flex: 1;}
       .sidebar-header {color: #adb5bd; padding: .375rem 1.5rem; font-size: .75rem; font-weight: 600; text-transform: none;}
@@ -21,10 +21,15 @@
       .sidebar-link:hover { color: #212529; }
       .fake_img {background-color: gray;}
 
+      .main {background-color: #007bff3b; width: 100%;}
+      .main .navbar {max-height: 60px; min-height: 60px;}
+      .wrapper {display: flex; overflow: hidden; width: 100%; /* position: relative; */ min-height: 100vh;}
     </style>
 
   </head>
   <body>
+  <div class="wrapper">
+    <!-- nav start -->
     <nav id="sidebar" class="sidebar navbar navbar-white p-0">
       <a class="sidebar-brand navbar-brand" href="#">
         <img src="" width="30" height="30" class="d-inline-block align-top fake_img" alt="">
@@ -44,11 +49,17 @@
         </ul>
       </div>
     </nav>
-
+    <!-- nav end -->
     <div class="main">
+      <nav class="navbar navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#sidebar" aria-controls="sidebar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </nav>
       <div class="content">
         ..
       </div>
     </div>
+  </div>
   </body>
 </html>
