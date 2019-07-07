@@ -1,0 +1,7 @@
+* Split 정규식
+String input = "A B CD   EF G  H"
+String[] arr = input.split(" +");
+
+
+결과값 : [A, B, CD, EF, G, H]
+- 공백이 한개 이상인 것을 split 
